@@ -1,4 +1,4 @@
-# Quick Gallery
+# Quick Gallery [![GitHub release](https://img.shields.io/github/release/dawidgorecki/quick-gallery.svg)](https://github.com/dawidgorecki/quick-gallery/releases) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/dawidgorecki/quick-gallery/master/LICENSE)
 `Quick Gallery` is a simple image gallery written in PHP. Gallery is creating automatically from a folder of images. You can use it to create your own gallery or add it to your projects really fast
 ## Features
 - easy to implement
