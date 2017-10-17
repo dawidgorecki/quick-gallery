@@ -1,0 +1,53 @@
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 16px;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   color: #333;
+}
+
+.container {
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+footer {
+  margin: 0 15px;
+}
+
+footer p {
+  font-size: .8rem;
+  text-align: center;
+  border-top: 1px solid #d2d2d2;
+  padding: 15px 0;
+  margin: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+  }
+}

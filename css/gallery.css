@@ -1,0 +1,136 @@
+@keyframes galleryStart {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.gallery-start {
+   animation-name: galleryStart;
+   animation-duration: 1s;
+   animation-fill-mode: both;
+}
+
+#quick-gallery {
+   margin: 15px;
+   overflow: hidden;
+}
+
+#quick-gallery:after {
+   content: '';
+   clear: both;
+}
+
+#quick-gallery p {
+   font-size: 1.2rem;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 5px;
+}
+
+#quick-gallery p > b {
+   font-style: italic;
+}
+
+/* Gallery header */
+
+#quick-gallery h1 {
+   text-transform: uppercase;
+   text-align: center;
+   border-bottom: 1px solid #d2d2d2;
+   padding-bottom: 15px;
+   margin: 15px 0;
+}
+
+/* Gallery image */
+
+#quick-gallery .gallery-image {
+   float: left;
+   padding: 3px;
+   border: 1px solid #d2d2d2; 
+   width: 100%;
+   height: 200px;
+}
+
+#quick-gallery .gallery-image a {
+   position: relative;
+   display: block;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+#quick-gallery .gallery-image a:after {
+   content: "\f002";
+   font-family: FontAwesome;
+   opacity: 0;
+   background-color: rgba(0, 0, 0, 0.75);
+   position: absolute;
+   right: 0;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   text-align: center;
+   line-height: 200px;
+   font-size: 30px;
+   color: #fff;
+   -webkit-transition: all 0.4s ease-in-out 0s;
+   -moz-transition: all 0.4s ease-in-out 0s;
+   transition: all 0.4s ease-in-out 0s;
+}
+
+#quick-gallery .gallery-image a:hover:after {
+   opacity: 1;
+}
+
+#quick-gallery .gallery-image a:hover img {
+   transform: scale(1.1);
+}
+
+#quick-gallery .gallery-image a img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   -webkit-transition: all 0.5s ease-in-out 0s;
+   -moz-transition: all 0.5s ease-in-out 0s;
+   transition: all 0.5s ease-in-out 0s;
+}
+
+@media (min-width: 768px) {
+  #quick-gallery .gallery-image {
+      width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+   #quick-gallery .gallery-image {
+      width: 25%;
+  }
+}
+
+@media (min-width: 1200px) {
+   #quick-gallery .gallery-image {
+      width: 20%;
+  }
+}
