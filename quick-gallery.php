@@ -20,7 +20,7 @@
                if (in_array($fileName, $toSkip)) continue;
                echo <<<_EOF
                <div class="galleryImage">
-                  <a href="$imagesDirectory/$fileName" target="_blank">
+                  <a href="javascript:void(0);" class="openBtn" data-src="$imagesDirectory/$fileName">
                      <img src="$imagesDirectory/$fileName" alt="$fileName">
                   </a>
                </div>
@@ -31,4 +31,12 @@ _EOF;
       ?>
    
 </section>
-<!-- /#quick-gallery -->
+<!-- /#quickGallery -->
+
+<div id="imagePreview" class="quickModal">
+   <div id="modalContent">
+      <span class="closeBtn"><i class="fa fa-times" aria-hidden="true"></i></span>
+      <img src="#" alt="">
+   </div>
+</div>
+<!-- /#imagePreview -->

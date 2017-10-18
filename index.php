@@ -37,5 +37,11 @@
             <p>&copy; <?php echo date("Y"); ?> Dawid Górecki. Licensed under the MIT License.</p>
          </footer>
       </div>
+
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+      <!-- Gallery JS script -->
+      <script src="js/gallery.js"></script>
    </body>
 </html>
