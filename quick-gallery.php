@@ -6,7 +6,7 @@
    $toSkip = [".", "..", ".htaccess", ".htpasswd"];
 
 ?>
-<section id="quick-gallery" class="gallery-start">
+<section id="quickGallery" class="slideInLeft">
    <h1>Gallery</h1>
    
       <?php 
@@ -19,12 +19,12 @@
             {
                if (in_array($fileName, $toSkip)) continue;
                echo <<<_EOF
-               <div class="gallery-image">
+               <div class="galleryImage">
                   <a href="$imagesDirectory/$fileName" target="_blank">
                      <img src="$imagesDirectory/$fileName" alt="$fileName">
                   </a>
                </div>
-               <!-- /.gallery-image -->
+               <!-- /.galleryImage -->
 _EOF;
             }
          }
